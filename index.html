@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azzel's Portofolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <div class="header-content">
+      <img src="./image/profilepicture.jpg" class="bgAbtME" alt="Profilw Picture" />
+      <h1 class="name-forHeader">Azzel Reyhanth Aristo</h1>
+      <br />
+      <h2 class="job-forHeader">UI/UX Designer and Front-End Developper</h2>
+    </div>
+  </head>
+  <body>
+    <div class="aboutme" style="background-image: './image/profilepicture.jpg'">
+      <div class="abtMe-content">
+        <h1 class="abtMe-title">About Me</h1>
+        <p class="abtMe-description">
+          I am a hard-working person who has a passion for designing a useful and user-friendly interface and front-end to bring a positive impact to the world through technology embedded with creativity. I am dedicated to being a great
+          UI/UX designer and front-end that can adapt to the latest technology and empathize with users’ needs in creating an amazing and simple experience through participating in soft-skills and hard-skills learning activities.
+        </p>
+      </div>
+    </div>
+
+    <div class="myskills">
+      <h1 class="skills-title">My Skills</h1>
+      <img src="./image/logo_C.png" class="CLogo" alt="Skill Picture" />
+      <img src="./image/logo_htmlCSSJS.png" class="skillsLogo" alt="Skill Picture" />
+      <img src="./image/logo_figma.svg" class="figmaLogo" alt="Skill Picture" />
+
+      <img src="./image/logo_photoshop.png" class="PSLogo" alt="Skill Picture" />
+      <img src="./image/logo_axure.svg" class="AXLogo" alt="Skill Picture" />
+    </div>
+
+    <div class="projects">
+      <div class="slide-container">
+        <div class="mySlides fade">
+          <div class="content">
+            <h1>Danbam</h1>
+            <h5>(March 2021- Present)</h5>
+            <p>
+              During my time as a college student, my teammate and I were tasked to create a website for a fictional restaurant named Danbam. This app provides several features such as an "About Us" page to learn the background of the
+              restaurant, a "Menu" page where users can see some of the restaurant's best meals and drinks, a "Location" page to let the users know the locations of DanBam, and a "Contact Us" page if the user has any questions about the
+              restaurant.
+            </p>
+            <a href="https://danbam.pages.dev/"><button class="seemore">See More!</button></a>
+          </div>
+          <img src="./image/Prototype_Danbam.png" alt="" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="content">
+            <h1>CS Course</h1>
+            <h5>(June 2021 - Present)</h5>
+            <p>
+              I've made a challenge for myself to lead a team of 3 in order to design an educational website. This leads me to create CS Course that provides free online courses for people to learn everything they need to know about
+              Computer Science. Each different course provides an E-Book, video learning, and exercises. This website also includes a forum page where users can interact with each other and share their knowledge regarding a certain topic.
+            </p>
+            <a href="https://www.figma.com/proto/AVE2TmdHXMwDo9JzcNJJAb/CS-Courses_Final-Project-HCI-(Finalized)?node-id=2%3A1475&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A1475"><button class="seemore">See More!</button></a>
+          </div>
+
+          <img src="./image/Prototype_CSCourse.png" alt="" />
+        </div>
+
+        <div class="mySlides fade">
+          <div class="content">
+            <h1>Garmob</h1>
+            <h5>(June 2022 - Present)</h5>
+            <p>
+              In a reasearch I have done with my teammates, we have found certain difficulties in gardening or farming. These problems resolves around uncertainty in maintaining and caring for plants, the unavailability of proper direction
+              on how to farm from experts, and the ignorance in the exact harvest time. In order to slove these issues, we have come up with a solution in a form of a gardening app named GarMob or Gardening Mobile. GarMob will help someone
+              in planting, by providing recommendations for tools and materials as well as planting media for each plant so that the tools and materials selected are appropriate and the user can get success in gardening and be able to
+              harvest.
+            </p>
+            <a href="https://www.figma.com/proto/s5yxkwmtyEQhi0pEe1dJr7/Prototype-GarMob?node-id=1%3A4&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A4"><button class="seemore">See More!</button></a>
+          </div>
+          <img src="./image/Prototype_GarMob.png" alt="" />
+        </div>
+        <!-- next&prev -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- dot -->
+        <div class="titik">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <div class="footer">
+      <footer>
+        <p>Follow my LinkedIn</p>
+        <a href="https://www.linkedin.com/in/azzel-reyhanth-aristo-046a54222/"><img src="./image/Linked In Logo.png" class="AXLogo" alt="linkedinLogo" /></a>
+      </footer>
+    </div>
+  </body>
+</html>

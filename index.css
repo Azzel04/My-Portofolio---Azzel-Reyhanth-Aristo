@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header-content {
+  background-color: #1e1e38;
+}
+.bgAbtME {
+  display: block;
+  padding-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  height: 15%;
+  border-radius: 100%;
+}
+.name-forHeader {
+  color: white;
+  text-align: center;
+  padding-top: 2%;
+  font-size: 1.7rem;
+}
+.job-forHeader {
+  color: white;
+  text-align: center;
+  padding-bottom: 2%;
+  font-size: 1.7rem;
+}
+.aboutme {
+  color: white;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-image: url("./image/coding.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.abtMe-content {
+  margin: 13%;
+}
+.abtMe-description {
+  padding-top: 2%;
+  font-size: 1.7rem;
+}
+.abtMe-title {
+  padding-top: 2%;
+  font-size: 3.2rem;
+}
+
+.myskills {
+  padding: 1.5vw;
+  color: white;
+  text-align: center;
+  background-color: #141425;
+  background-size: 100%;
+  font-size: 1.7rem;
+}
+.skillsLogo {
+  padding: 3%;
+  display: inline;
+  width: 25%;
+}
+.figmaLogo {
+  padding: 3%;
+  display: inline;
+  width: 7%;
+}
+.CLogo {
+  padding: 3%;
+  display: inline;
+  width: 10%;
+}
+.AXLogo {
+  padding: 3%;
+  display: inline;
+  width: 10%;
+}
+.PSLogo {
+  padding: 3%;
+  display: inline;
+  width: 10%;
+}
+.skills-title {
+  text-align: center;
+  padding-top: 2%;
+  font-size: 3.5vw;
+}
+
+/* slides */
+/* gambar */
+.slide-container {
+  max-width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.mySlides {
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 30vw;
+}
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* dot */
+.titik {
+  position: absolute;
+  bottom: 0.5%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.dot span {
+  text-align: center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.content {
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 1rem;
+}
+.content h5 {
+  padding-bottom: 0.5rem;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transform: translate(0%, -50%);
+}
+
+.seemore {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(98, 84, 224);
+  width: 10rem;
+  height: 3.5rem;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.footer {
+  padding: 3%;
+  color: white;
+  text-align: center;
+  background-color: #1e1e38;
+  background-size: 100%;
+  font-size: 1.7rem;
+}
