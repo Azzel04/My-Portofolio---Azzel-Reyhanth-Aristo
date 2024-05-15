@@ -90,6 +90,16 @@
   display: inline;
   width: 10%;
 }
+.LRVLogo {
+  padding: 3%;
+  display: inline;
+  width: 35%;
+}
+.PHPLogo {
+  padding: 3%;
+  display: inline;
+  width: 20%;
+}
 .skills-title {
   text-align: center;
   padding-top: 2%;
